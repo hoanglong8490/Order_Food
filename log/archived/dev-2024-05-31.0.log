@@ -1,0 +1,285 @@
+2024-05-31 WARN  1044 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h49m36s119ms762µs100ns). 
+2024-05-31 INFO  1044 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  1044 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  1044 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  22532 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 22532 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  22532 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  22532 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  22532 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  22532 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  22532 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  22532 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  22532 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  22532 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  22532 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2102 ms 
+2024-05-31 INFO  22532 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  22532 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  22532 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  22532 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  22532 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  22532 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fb5d334 
+2024-05-31 INFO  22532 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  22532 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  22532 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  22532 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  22532 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  22532 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  22532 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  22532 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'customUserDetail': Error creating bean with name 'customUserDetail' defined in file [D:\pizzahouse\pizzahouse\target\classes\com\pizzahouse\Security\CustomUserDetail.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.pizzahouse.Entity.User' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} 
+2024-05-31 INFO  22532 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  22532 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  22532 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  22532 o.apache.catalina.core.StandardService : Stopping service [Tomcat] 
+2024-05-31 INFO  22532 o.s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2024-05-31 ERROR 22532 o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.pizzahouse.Security.CustomUserDetail required a bean of type 'com.pizzahouse.Entity.User' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.pizzahouse.Entity.User' in your configuration.
+ 
+2024-05-31 INFO  13828 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 13828 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  13828 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  13828 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  13828 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  13828 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  13828 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  13828 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  13828 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  13828 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  13828 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1516 ms 
+2024-05-31 INFO  13828 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  13828 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  13828 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  13828 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  13828 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  13828 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d556461 
+2024-05-31 INFO  13828 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  13828 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  13828 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  13828 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  13828 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  13828 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  13828 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  13828 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  13828 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  13828 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@146b4c6c, org.springframework.security.web.context.SecurityContextHolderFilter@4505ec36, org.springframework.security.web.header.HeaderWriterFilter@3be60847, org.springframework.security.web.authentication.logout.LogoutFilter@1abb719a, com.pizzahouse.Security.AuthTokenFillter@5ce03a9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b23aea2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@786de0a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b166420, org.springframework.security.web.access.ExceptionTranslationFilter@4c7d19bf, org.springframework.security.web.access.intercept.AuthorizationFilter@4d305059] 
+2024-05-31 INFO  13828 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  13828 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  13828 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 5.902 seconds (process running for 6.757) 
+2024-05-31 INFO  13828 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  13828 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  13828 o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13828 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  13828 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  13828 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  13828 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  14908 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 14908 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  14908 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  14908 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  14908 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  14908 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  14908 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  14908 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  14908 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  14908 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  14908 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms 
+2024-05-31 INFO  14908 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  14908 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  14908 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  14908 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  14908 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  14908 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27ec0d06 
+2024-05-31 INFO  14908 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  14908 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  14908 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  14908 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  14908 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  14908 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  14908 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  14908 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  14908 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  14908 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c0ec502, org.springframework.security.web.context.SecurityContextHolderFilter@700b035b, org.springframework.security.web.header.HeaderWriterFilter@41fe0d98, org.springframework.security.web.authentication.logout.LogoutFilter@4d305059, com.pizzahouse.Security.AuthTokenFillter@2ef3efcc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@472dc215, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6441db2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6287e312, org.springframework.security.web.access.ExceptionTranslationFilter@73f6ffb1, org.springframework.security.web.access.intercept.AuthorizationFilter@74214ac3] 
+2024-05-31 INFO  14908 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  14908 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  14908 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 6.741 seconds (process running for 7.73) 
+2024-05-31 INFO  14908 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  14908 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  14908 o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  14908 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  14908 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  14908 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  14908 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  20424 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 20424 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  20424 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  20424 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  20424 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  20424 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  20424 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  20424 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  20424 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  20424 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  20424 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1803 ms 
+2024-05-31 INFO  20424 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  20424 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  20424 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  20424 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  20424 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  20424 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d556461 
+2024-05-31 INFO  20424 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  20424 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  20424 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  20424 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  20424 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  20424 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  20424 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  20424 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  20424 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  20424 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76e10574, org.springframework.security.web.context.SecurityContextHolderFilter@3dfe2797, org.springframework.security.web.header.HeaderWriterFilter@41db6e4b, org.springframework.security.web.authentication.logout.LogoutFilter@4b98c80c, com.pizzahouse.Security.AuthTokenFillter@73d7e7aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c050a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5562f297, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c290246, org.springframework.security.web.access.ExceptionTranslationFilter@3a70acd5, org.springframework.security.web.access.intercept.AuthorizationFilter@515b7335] 
+2024-05-31 INFO  20424 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  20424 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  20424 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 6.953 seconds (process running for 7.922) 
+2024-05-31 INFO  20424 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  20424 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  20424 o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024-05-31 WARN  20424 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  20424 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  20424 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  20424 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  20424 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  18168 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 18168 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  18168 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  18168 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  18168 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  18168 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  18168 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  18168 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  18168 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  18168 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  18168 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms 
+2024-05-31 INFO  18168 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  18168 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  18168 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  18168 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  18168 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  18168 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@749f61a3 
+2024-05-31 INFO  18168 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  18168 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  18168 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  18168 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  18168 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  18168 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  18168 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  18168 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  18168 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  18168 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@146b4c6c, org.springframework.security.web.context.SecurityContextHolderFilter@4505ec36, org.springframework.security.web.header.HeaderWriterFilter@3be60847, org.springframework.security.web.authentication.logout.LogoutFilter@1abb719a, com.pizzahouse.Security.AuthTokenFillter@3f7f9d3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b23aea2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@786de0a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b166420, org.springframework.security.web.access.ExceptionTranslationFilter@4c7d19bf, org.springframework.security.web.access.intercept.AuthorizationFilter@4d305059] 
+2024-05-31 INFO  18168 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  18168 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  18168 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 6.982 seconds (process running for 7.983) 
+2024-05-31 INFO  18168 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  18168 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  18168 o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024-05-31 WARN  18168 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  18168 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  18168 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  18168 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  18168 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  18168 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  18168 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  13468 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 13468 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  13468 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  13468 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  13468 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  13468 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  13468 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  13468 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  13468 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  13468 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  13468 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1750 ms 
+2024-05-31 INFO  13468 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  13468 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  13468 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  13468 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  13468 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  13468 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d664323 
+2024-05-31 INFO  13468 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  13468 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  13468 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  13468 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  13468 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  13468 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  13468 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  13468 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  13468 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  13468 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31b4c003, org.springframework.security.web.context.SecurityContextHolderFilter@64c1a76e, org.springframework.security.web.header.HeaderWriterFilter@7ecf4608, org.springframework.security.web.authentication.logout.LogoutFilter@216de23a, com.pizzahouse.Security.AuthTokenFillter@640028f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b2c9a69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@951053f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74214ac3, org.springframework.security.web.access.ExceptionTranslationFilter@3f6fd33b, org.springframework.security.web.access.intercept.AuthorizationFilter@49318c2a] 
+2024-05-31 INFO  13468 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  13468 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  13468 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 6.773 seconds (process running for 7.799) 
+2024-05-31 INFO  13468 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  13468 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  13468 o.s.web.servlet.DispatcherServlet : Completed initialization in 3 ms 
+2024-05-31 WARN  13468 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  13468 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  13468 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  13468 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  13468 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2024-05-31 INFO  21604 com.pizzahouse.PizzahouseApplication : Starting PizzahouseApplication using Java 22 with PID 21604 (D:\pizzahouse\pizzahouse\target\classes started by Speedyse  rvice in D:\pizzahouse\pizzahouse) 
+2024-05-31 INFO  21604 com.pizzahouse.PizzahouseApplication : No active profile set, falling back to 1 default profile: "default" 
+2024-05-31 INFO  21604 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-05-31 INFO  21604 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface. 
+2024-05-31 INFO  21604 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http) 
+2024-05-31 INFO  21604 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  21604 o.apache.catalina.core.StandardService : Starting service [Tomcat] 
+2024-05-31 INFO  21604 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-05-31 INFO  21604 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2024-05-31 INFO  21604 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1745 ms 
+2024-05-31 INFO  21604 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-05-31 INFO  21604 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.5.2.Final 
+2024-05-31 INFO  21604 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled 
+2024-05-31 INFO  21604 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer 
+2024-05-31 INFO  21604 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2024-05-31 INFO  21604 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b339a08 
+2024-05-31 INFO  21604 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2024-05-31 WARN  21604 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2024-05-31 WARN  21604 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-05-31 WARN  21604 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 WARN  21604 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.pizzahouse.Entity.key.KeyOrderDetail 
+2024-05-31 INFO  21604 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2024-05-31 INFO  21604 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 WARN  21604 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-05-31 INFO  21604 o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailSecurity 
+2024-05-31 INFO  21604 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3021e31, org.springframework.security.web.context.SecurityContextHolderFilter@34c050a1, org.springframework.security.web.header.HeaderWriterFilter@6c4eccd2, org.springframework.security.web.authentication.logout.LogoutFilter@52539624, com.pizzahouse.Security.AuthTokenFillter@349686e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32c114d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f143ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d305059, org.springframework.security.web.access.ExceptionTranslationFilter@41db6e4b, org.springframework.security.web.access.intercept.AuthorizationFilter@216de23a] 
+2024-05-31 INFO  21604 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"] 
+2024-05-31 INFO  21604 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path '/' 
+2024-05-31 INFO  21604 com.pizzahouse.PizzahouseApplication : Started PizzahouseApplication in 6.918 seconds (process running for 7.901) 
+2024-05-31 INFO  21604 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-05-31 INFO  21604 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2024-05-31 INFO  21604 o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2024-05-31 WARN  21604 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 WARN  21604 o.s.s.c.bcrypt.BCryptPasswordEncoder : Empty encoded password 
+2024-05-31 INFO  21604 o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-05-31 INFO  21604 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2024-05-31 INFO  21604 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
